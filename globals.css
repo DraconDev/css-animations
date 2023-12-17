@@ -1,0 +1,24 @@
+.childBox1 {
+    display: flex;
+    height: 50%;
+    width: 50%;
+    background-color: green;
+    transform: translate(100%, 0%);
+}
+
+.childBox2 {
+    display: flex;
+    height: 50%;
+    width: 50%;
+    background-color: red;
+    /* transform: rotate(360deg); */
+    /* transform: rotate(360deg); */
+}
+
+.parentBox {
+    display: flex;
+    background-color: teal;
+    width: 66%;
+    height: 66%;
+    transition: 5s;
+}
