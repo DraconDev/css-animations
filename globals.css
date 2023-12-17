@@ -4,6 +4,11 @@
     width: 66%;
     height: 66%;
     flex-wrap: wrap;
+
+    .childBox2:hover {
+        transform: rotate(360deg);
+        transition: 5s;
+    }
 }
 
 .parentBox:hover .childBox1 {
@@ -34,18 +39,36 @@
 }
 
 .childBox3 {
-    /* transition: 5s; */
     display: flex;
     height: 50%;
     width: 50%;
     background-color: blue;
-    /* transform: translate(100%, 0%); */
+    transition: 3;
+    transform: rotate(360deg);
 }
+
+.parentBox:hover .childBox3 {
+    /* transform: rotate(360deg); */
+    /* transform: rotate(360deg); */
+}
+
 .childBox4 {
     /* transition: 5s; */
     display: flex;
     height: 50%;
     width: 50%;
     background-color: yellow;
+    animation: spinny 5s linear infinite;
     /* transform: translate(100%, 0%); */
+    border-radius: 50%;
+}
+
+@keyframes spinny {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
